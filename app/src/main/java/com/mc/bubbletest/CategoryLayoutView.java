@@ -43,7 +43,8 @@ public class CategoryLayoutView extends FrameLayout {
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
-        mListView.layout(0,top,right,bottom);
+
+        mListView.layout(0,top,LayoutParams.MATCH_PARENT,LayoutParams.MATCH_PARENT);
         mListView.setPadding(4,4,4,4);
         mListView.setBackgroundColor(Color.GREEN);
     }

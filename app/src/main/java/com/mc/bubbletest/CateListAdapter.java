@@ -56,7 +56,7 @@ public class CateListAdapter extends BaseAdapter {
         }else {
             holder = (CateViewHolder) convertView.getTag();
         }
-
+        holder.tvCate.setText(mData.get(position).getName());
 
         return convertView;
     }

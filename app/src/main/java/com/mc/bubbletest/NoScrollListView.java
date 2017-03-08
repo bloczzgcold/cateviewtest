@@ -1,4 +1,4 @@
-package cn.techen.qiancheng.ui.widget;
+package com.mc.bubbletest;
 
 import android.content.Context;
 import android.util.AttributeSet;
