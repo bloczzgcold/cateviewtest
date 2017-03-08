@@ -1,6 +1,7 @@
 package com.mc.bubbletest;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.annotation.AttrRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -43,6 +44,8 @@ public class CategoryLayoutView extends FrameLayout {
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
         mListView.layout(0,top,right,bottom);
+        mListView.setPadding(4,4,4,4);
+        mListView.setBackgroundColor(Color.GREEN);
     }
 
     public void setData(int top,List<Cate> data){
